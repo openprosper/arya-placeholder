@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Openprosper - DESO Creator and Community Intelligence</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="nofollow"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" href="./assets/icon.png" sizes="16x16" type="image/png" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="row" style="padding: 10px">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 text-center" style="margin-top: 75px">
+        <div>
+          <img src="./assets/logo.png" alt="Openprosper logo" width="100px" />
+        </div>
+        <div style="margin-top: 15px">
+          <h1>
+            <span style="font-weight: 300">open</span><strong>prosper</strong>
+          </h1>
+          <p style="color: #50657e; font-size: 20px">
+            DESO Creator and Community Intelligence Platform.
+          </p>
+        </div>
+        <div style="margin-top: 75px; color: #50657e; font-size: 20px">
+          <p>
+            Thank you for visiting us here :)
+            <br />
+            For now, please check out
+            <a href="https://www.ProsperClout.com/?ref=openprosper"
+              >ProsperClout.com</a
+            >
+            for DESO creator and community intelligence platform.
+          </p>
+        </div>
+        <div style="margin-top: 75px; opacity: 0.35; color: #27384d">
+          <span id="seconds-counter"></span>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+
+    <script>
+      var seconds = 20;
+      var el = document.getElementById("seconds-counter");
+
+      function decrementSeconds() {
+        seconds -= 1;
+        var redirectText = "Redirecting you to ProsperClout.com in " + seconds;
+        if (seconds === 0) {
+          window.location.href =
+            "https://www.prosperclout.com/?ref=openprosper";
+        } else if (seconds !== 1) {
+          el.innerText = redirectText + " seconds.";
+        } else {
+          el.innerText = redirectText + " second.";
+        }
+      }
+
+      var cancel = setInterval(decrementSeconds, 1000);
+    </script>
+  </body>
+</html>
